@@ -86,7 +86,8 @@ from `sparrow_apparels.orders`
 order by profit desc
 
 --returns a list of clients by their profit value
-with orders_profit as (select
+with orders_profit
+as (select
 order_id,
 client_code,
 quote_price*total_quantity as selling_price,
@@ -97,15 +98,16 @@ order by profit desc)
 
 select
 client_code,
- sum(selling_price) as selling_price,
- sum(cost_price) as cost_price,
- sum(profit) as profit
+sum(selling_price) as selling_price,
+sum(cost_price) as cost_price,
+sum(profit) as profit
 from orders_profit
 group by client_code
 order by profit desc
 
 --returns a list of product type by their profit value
-with orders_profit as (select
+with orders_profit 
+as (select
 order_id,
 product_type,
 quote_price*total_quantity as selling_price,
@@ -122,3 +124,15 @@ product_type,
 from orders_profit
 group by product_type
 order by profit desc
+----------------------------------------------------------------------------------
+  
+/*How much man hour was consumed each month for orders booked in the same month?*/
+
+select 
+extract(month from order_date) as month,
+extract (year from order_date) as year,
+count(order_id) as orders_booked,
+sum(days_to_fulfill_order)*8 as manhours_consumed,
+(24*8-sum(days_to_fulfill_order)*8) as balance_manhours
+from `sparrow_apparels.orders`
+group by 1,2
