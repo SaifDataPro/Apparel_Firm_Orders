@@ -24,11 +24,11 @@ This project analyzes order data from a small Apparel firm that records data in 
 
 * Number of Orders and items by time frame - Month, Qtr, Year
 * Number of Orders and items by Clients, Product Type, size, Packaging
-* How much would be the unit cost of Production for each Product type?
+* What is the average order size and average order value for each client?
+* How much would be the cost price (production+packaging) for each Product type?
+* What is the Profit by Order, by Product type, by Client?
 * How much man-hour would be needed to fulfill each order and the associated cost?
 * How much man hour was consumed each month for orders booked in the same month?
-* How much would be the total cost of production for each order end to end?
-* Considering the firm wants to keep a margin of 25-30% on it's orders, suggest what selling price should be quoted for each order
 * A brief analysis on rejected orders
 
 ## Key Findings
