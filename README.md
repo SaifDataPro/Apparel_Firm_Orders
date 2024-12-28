@@ -18,7 +18,8 @@ This project analyzes order data from a small Apparel firm that records data in 
 * The cost of materials, packaging and manhour was kept constant
 * Each order has only a specific type of Product associated with it
 * Production cost means - cost of material required to fulfill an order, manhour cost to complete all process and cost of packaging material
-* The firm uses discounts for high volume orders depending on relatiosnhip with the client, these can be anything between 2-5% of order value
+* Total working days are 24 and that consists of 8 hrs of working each day
+* The firm uses discounts for high volume orders depending on order volume, for anything above 40 items the profit margin is 27.5% while below that is 30%
 
 ## Business Questions Addressed
 
@@ -27,7 +28,6 @@ This project analyzes order data from a small Apparel firm that records data in 
 * What is the average order size and average order value for each client?
 * How much would be the cost price (production+packaging) for each Product type?
 * What is the Profit by Order, by Product type, by Client?
-* How much man-hour would be needed to fulfill each order and the associated cost?
 * How much man hour was consumed each month for orders booked in the same month?
 * A brief analysis on rejected orders
 
