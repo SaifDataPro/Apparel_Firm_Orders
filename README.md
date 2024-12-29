@@ -33,6 +33,7 @@ This project analyzes order data from a small Apparel firm that records data in 
 
 ## Key Findings
 
-* 
+* Spparow Apparels saw a decline in it's orders and revenue as compared to year 2023, majorly driven by fewer Blazer, Uniform and Jeans orders
+* The top 2 Customers orders saw a 60-80% decline as compared to last year
+* Year 2024 saw the highest ever Shirt ordered, which resulted in a 90% more revenue for shirts as compared to last year
 
-## Project Structure
